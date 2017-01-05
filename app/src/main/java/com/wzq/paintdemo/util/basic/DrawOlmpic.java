@@ -1,4 +1,4 @@
-package com.wzq.paintdemo.util;
+package com.wzq.paintdemo.util.basic;
 
 import android.graphics.Bitmap;
 import android.graphics.Canvas;

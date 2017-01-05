@@ -4,16 +4,14 @@ import android.content.Context;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.graphics.Canvas;
-import android.graphics.Color;
-import android.graphics.Paint;
 import android.util.AttributeSet;
 import android.view.View;
 
 import com.wzq.paintdemo.R;
-import com.wzq.paintdemo.util.DrawBas;
-import com.wzq.paintdemo.util.DrawBitmapShader;
-import com.wzq.paintdemo.util.DrawOlmpic;
-import com.wzq.paintdemo.util.DrawStar;
+import com.wzq.paintdemo.util.basic.DrawBas;
+import com.wzq.paintdemo.util.shder.DrawBitmapShader;
+import com.wzq.paintdemo.util.basic.DrawOlmpic;
+import com.wzq.paintdemo.util.basic.DrawStar;
 
 /**
  * Created by wzq on 17-1-5.
