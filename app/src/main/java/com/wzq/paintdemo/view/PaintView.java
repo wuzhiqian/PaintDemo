@@ -11,6 +11,7 @@ import android.view.View;
 
 import com.wzq.paintdemo.R;
 import com.wzq.paintdemo.util.DrawBas;
+import com.wzq.paintdemo.util.DrawBitmapShader;
 import com.wzq.paintdemo.util.DrawOlmpic;
 import com.wzq.paintdemo.util.DrawStar;
 
@@ -22,6 +23,7 @@ public class PaintView extends View {
 
 
     private Bitmap bitmap;
+    private Bitmap dogBmp;
 
     public PaintView(Context context) {
         this(context, null);
@@ -34,6 +36,7 @@ public class PaintView extends View {
     public PaintView(Context context, AttributeSet attrs, int defStyleAttr) {
         super(context, attrs, defStyleAttr);
         bitmap = BitmapFactory.decodeResource(getResources(),R.mipmap.pic);
+        dogBmp = BitmapFactory.decodeResource(getResources(),R.mipmap.a);
     }
 
 
@@ -43,5 +46,8 @@ public class PaintView extends View {
         DrawOlmpic.drawOlmpic(canvas, bitmap);
         DrawStar.drawStar(canvas);
         DrawBas.drawBas(canvas);
+        DrawBitmapShader.drawBitmapShader(canvas, dogBmp);
+
+   //     DrawBitmapShader.drawCircleBitmapShader(canvas, dogBmp);
     }
 }
