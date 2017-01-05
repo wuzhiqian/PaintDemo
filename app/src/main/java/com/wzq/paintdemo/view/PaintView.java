@@ -10,6 +10,7 @@ import android.util.AttributeSet;
 import android.view.View;
 
 import com.wzq.paintdemo.R;
+import com.wzq.paintdemo.util.DrawBas;
 import com.wzq.paintdemo.util.DrawOlmpic;
 import com.wzq.paintdemo.util.DrawStar;
 
@@ -41,5 +42,6 @@ public class PaintView extends View {
         super.onDraw(canvas);
         DrawOlmpic.drawOlmpic(canvas, bitmap);
         DrawStar.drawStar(canvas);
+        DrawBas.drawBas(canvas);
     }
 }
