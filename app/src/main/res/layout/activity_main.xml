@@ -23,6 +23,13 @@
                 android:clickable="true"
                 android:text="进入简易绘图"
                 android:onClick="enterBisicAcitivity"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:text="进入渲染绘图"
+                android:onClick="enterShaderAcitivity"/>
         </LinearLayout>
     </ScrollView>
 

@@ -24,5 +24,13 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
+    public void enterShaderAcitivity(View view)
+    {
+        Intent intent = new Intent();
+        intent.setClass(this, ShaderActivity.class);
+        startActivity(intent);
+    }
+
+
 
 }

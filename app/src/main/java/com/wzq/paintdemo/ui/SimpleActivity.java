@@ -5,7 +5,7 @@ import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 
 import com.wzq.paintdemo.R;
-import com.wzq.paintdemo.view.PaintView;
+import com.wzq.paintdemo.view.basicview.PaintView;
 
 /**
  * Created by wzq on 17-1-5.

@@ -17,6 +17,7 @@
         </activity>
 
         <activity android:name=".ui.SimpleActivity"/>
+        <activity android:name=".ui.ShaderActivity"/>
     </application>
 
 </manifest>
