@@ -1,7 +1,11 @@
-package com.wzq.paintdemo;
+package com.wzq.paintdemo.ui;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
+
+import com.wzq.paintdemo.R;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -10,4 +14,15 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
     }
+
+
+    public void enterBisicAcitivity(View view)
+    {
+        Intent intent = new Intent();
+        intent.setClass(this, SimpleActivity.class);
+        startActivity(intent);
+    }
+
+
+
 }

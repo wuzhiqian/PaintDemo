@@ -50,4 +50,13 @@ public class PaintView extends View {
 
    //     DrawBitmapShader.drawCircleBitmapShader(canvas, dogBmp);
     }
+
+
+    public void destoryBitmap()
+    {
+        if(bitmap != null && !bitmap.isRecycled())
+            bitmap.recycle();
+        if(dogBmp != null && !dogBmp.isRecycled())
+            dogBmp.recycle();
+    }
 }
