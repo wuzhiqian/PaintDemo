@@ -22,6 +22,8 @@
 
 
             <include layout="@layout/sweepgradient_view"/>
+
+            <include layout="@layout/composeshader_view"/>
         </LinearLayout>
     </ScrollView>
 </LinearLayout>

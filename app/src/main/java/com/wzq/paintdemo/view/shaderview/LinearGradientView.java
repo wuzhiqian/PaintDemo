@@ -23,7 +23,7 @@ public class LinearGradientView extends BaseView{
 
     public LinearGradientView(Context context, AttributeSet attrs, int defStyleAttr) {
         super(context, attrs, defStyleAttr);
-        drawLinearGradient = new DrawLinearGradient(bitmap);
+        drawLinearGradient = new DrawLinearGradient();
     }
 
     @Override

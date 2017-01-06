@@ -13,6 +13,11 @@ import android.graphics.Shader;
 public class DrawRadialGradient {
     private Paint paint;
     private Shader radialGradient;
+
+    public Shader getRadialGradient() {
+        return radialGradient;
+    }
+
     public DrawRadialGradient()
     {
         paint = new Paint();

@@ -30,7 +30,7 @@ public class BitmapShaderView extends BaseView {
         super(context, attrs, defStyleAttr);
         TypedArray a =  context.obtainStyledAttributes(attrs, R.styleable.BitmapShaderView);
         type = a.getInt(R.styleable.BitmapShaderView_type, 1);
-        drawBitmapShader = new DrawBitmapShader();
+        drawBitmapShader = new DrawBitmapShader(bitmap);
 
     }
 

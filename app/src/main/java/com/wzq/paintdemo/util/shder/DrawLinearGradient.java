@@ -15,11 +15,15 @@ public class DrawLinearGradient {
     private Paint paint;
     private LinearGradient linearGradient;
 
-    public DrawLinearGradient(Bitmap bitmap)
+    public LinearGradient getLinearGradient() {
+        return linearGradient;
+    }
+
+    public DrawLinearGradient()
     {
         paint = new Paint();
         paint.setAntiAlias(true);
-        linearGradient = new LinearGradient(10, 10, bitmap.getWidth() - 10, bitmap.getHeight() - 10, new int[]{Color.YELLOW, Color.BLACK, Color.BLUE, Color.GREEN, Color.RED}, null, Shader.TileMode.REPEAT);
+        linearGradient = new LinearGradient(10, 10, 352 - 10, 220 - 10, new int[]{Color.YELLOW, Color.BLACK, Color.BLUE, Color.GREEN, Color.RED}, null, Shader.TileMode.REPEAT);
 
     }
     public  void drawLinearGradient(Canvas canvas, Bitmap bitmap) {

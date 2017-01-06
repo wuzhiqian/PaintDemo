@@ -14,6 +14,10 @@ public class DrawSweepGradient {
     private Paint paint;
     private SweepGradient sweepGradient;
 
+    public SweepGradient getSweepGradient() {
+        return sweepGradient;
+    }
+
     public DrawSweepGradient()
     {
         paint = new Paint();
