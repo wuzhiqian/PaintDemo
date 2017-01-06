@@ -1,6 +1,7 @@
 package com.wzq.paintdemo.view.shaderview;
 
 import android.content.Context;
+import android.content.res.TypedArray;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.graphics.Canvas;
@@ -23,16 +24,21 @@ public class BitmapShaderView extends View {
     public BitmapShaderView(Context context, AttributeSet attrs) {
         this(context, attrs, 0);
     }
-
+    private int type = 1;
     public BitmapShaderView(Context context, AttributeSet attrs, int defStyleAttr) {
         super(context, attrs, defStyleAttr);
+        TypedArray a =  context.obtainStyledAttributes(attrs, R.styleable.BitmapShaderView);
+        type = a.getInt(R.styleable.BitmapShaderView_type, 1);
         bitmap = BitmapFactory.decodeResource(getResources(), R.mipmap.a);
     }
 
     @Override
     protected void onDraw(Canvas canvas) {
         super.onDraw(canvas);
-        DrawBitmapShader.drawBitmapShader(canvas, bitmap);
+        if(type == 1)
+            DrawBitmapShader.drawBitmapShader(canvas, bitmap);
+        else
+            DrawBitmapShader.drawArcBitmapShader(canvas,bitmap);
 
     }
 }

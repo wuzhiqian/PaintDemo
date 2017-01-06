@@ -30,7 +30,7 @@ public class DrawBitmapShader {
 
     public static void drawArcBitmapShader(Canvas canvas, Bitmap bitmap) {
         circleBitmapShader = new BitmapShader(bitmap, Shader.TileMode.MIRROR,Shader.TileMode.REPEAT);
-        circleShapeDrawable = new ShapeDrawable(new ArcShape(180, 50));
+        circleShapeDrawable = new ShapeDrawable(new ArcShape(0, 130));
         circleShapeDrawable.getPaint().setShader(circleBitmapShader);
         circleShapeDrawable.setBounds(20, 10, bitmap.getWidth() , bitmap.getHeight());
         circleShapeDrawable.draw(canvas);
