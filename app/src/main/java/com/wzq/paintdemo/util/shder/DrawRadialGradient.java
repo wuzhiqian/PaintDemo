@@ -16,7 +16,7 @@ public class DrawRadialGradient {
     public DrawRadialGradient()
     {
         paint = new Paint();
-
+        paint.setAntiAlias(true);
         radialGradient = new RadialGradient(240, 150,100, new int[]{Color.YELLOW, Color.GREEN,Color.RED, Color.BLUE, Color.BLACK}, null, Shader.TileMode.REPEAT);
     }
 

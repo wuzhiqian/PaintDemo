@@ -17,6 +17,11 @@
 
 
             <include layout="@layout/lineargradient_view"/>
+
+            <include layout="@layout/radialgradient_view"/>
+
+
+            <include layout="@layout/sweepgradient_view"/>
         </LinearLayout>
     </ScrollView>
 </LinearLayout>

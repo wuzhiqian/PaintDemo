@@ -18,6 +18,7 @@ public class DrawLinearGradient {
     public DrawLinearGradient(Bitmap bitmap)
     {
         paint = new Paint();
+        paint.setAntiAlias(true);
         linearGradient = new LinearGradient(10, 10, bitmap.getWidth() - 10, bitmap.getHeight() - 10, new int[]{Color.YELLOW, Color.BLACK, Color.BLUE, Color.GREEN, Color.RED}, null, Shader.TileMode.REPEAT);
 
     }
