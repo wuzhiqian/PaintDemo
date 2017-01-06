@@ -44,7 +44,7 @@ public class PaintView extends View {
         DrawOlmpic.drawOlmpic(canvas, bitmap);
         DrawStar.drawStar(canvas);
         DrawBas.drawBas(canvas);
-        DrawBitmapShader.drawBitmapShader(canvas, dogBmp);
+      //  DrawBitmapShader.drawBitmapShader(canvas, dogBmp);
 
    //     DrawBitmapShader.drawArcBitmapShader(canvas, dogBmp);
     }

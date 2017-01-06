@@ -16,18 +16,18 @@ import android.graphics.drawable.shapes.RoundRectShape;
  */
 
 public class DrawBitmapShader {
-    private static BitmapShader bitmapShader;
-    private static ShapeDrawable shapeDrawable;
+    private  BitmapShader bitmapShader;
+    private  ShapeDrawable shapeDrawable;
 
 
-    private static BitmapShader arcBitmapShader;
-    private static ShapeDrawable arcShapeDrawable;
+    private  BitmapShader arcBitmapShader;
+    private  ShapeDrawable arcShapeDrawable;
 
 
-    private static BitmapShader circleRectBitmapShader;
-    private static ShapeDrawable circleRectBitmapDrawable;
+    private  BitmapShader circleRectBitmapShader;
+    private  ShapeDrawable circleRectBitmapDrawable;
 
-    public static void drawBitmapShader(Canvas canvas, Bitmap bitmap) {
+    public  void drawBitmapShader(Canvas canvas, Bitmap bitmap) {
         bitmapShader = new BitmapShader(bitmap, Shader.TileMode.MIRROR,Shader.TileMode.REPEAT);
         shapeDrawable = new ShapeDrawable(new OvalShape());
         shapeDrawable.getPaint().setShader(bitmapShader);
@@ -35,7 +35,7 @@ public class DrawBitmapShader {
         shapeDrawable.draw(canvas);
     }
 
-    public static void drawArcBitmapShader(Canvas canvas, Bitmap bitmap) {
+    public  void drawArcBitmapShader(Canvas canvas, Bitmap bitmap) {
         arcBitmapShader = new BitmapShader(bitmap, Shader.TileMode.MIRROR,Shader.TileMode.REPEAT);
         arcShapeDrawable = new ShapeDrawable(new ArcShape(0, 130));
         arcShapeDrawable.getPaint().setShader(arcBitmapShader);
@@ -43,7 +43,7 @@ public class DrawBitmapShader {
         arcShapeDrawable.draw(canvas);
     }
 
-    public static void drawCircleBitmapShader(Canvas canvas, Bitmap bitmap)
+    public  void drawCircleBitmapShader(Canvas canvas, Bitmap bitmap)
     {
         circleRectBitmapShader = new BitmapShader(bitmap, Shader.TileMode.REPEAT, Shader.TileMode.REPEAT);
         circleRectBitmapDrawable = new ShapeDrawable(new RoundRectShape(new float[]{10, 10, 10, 10, 10, 10, 10, 10}, new RectF(30, 30, 30, 30), new float[]{30, 30, 30, 30, 30, 30, 30, 30}));

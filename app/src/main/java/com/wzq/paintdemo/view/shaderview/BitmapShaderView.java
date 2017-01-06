@@ -10,13 +10,14 @@ import android.view.View;
 
 import com.wzq.paintdemo.R;
 import com.wzq.paintdemo.util.shder.DrawBitmapShader;
+import com.wzq.paintdemo.view.BaseView;
 
 /**
  * Created by wzq on 17-1-5.
  */
 
-public class BitmapShaderView extends View {
-    private Bitmap bitmap;
+public class BitmapShaderView extends BaseView {
+    DrawBitmapShader drawBitmapShader;
     public BitmapShaderView(Context context) {
         this(context, null);
     }
@@ -29,18 +30,21 @@ public class BitmapShaderView extends View {
         super(context, attrs, defStyleAttr);
         TypedArray a =  context.obtainStyledAttributes(attrs, R.styleable.BitmapShaderView);
         type = a.getInt(R.styleable.BitmapShaderView_type, 1);
-        bitmap = BitmapFactory.decodeResource(getResources(), R.mipmap.a);
+        drawBitmapShader = new DrawBitmapShader();
+
     }
 
     @Override
     protected void onDraw(Canvas canvas) {
         super.onDraw(canvas);
         if(type == 1)
-            DrawBitmapShader.drawBitmapShader(canvas, bitmap);
+            drawBitmapShader.drawBitmapShader(canvas, bitmap);
         else if(type == 2)
-            DrawBitmapShader.drawArcBitmapShader(canvas,bitmap);
+            drawBitmapShader.drawArcBitmapShader(canvas,bitmap);
         else
-            DrawBitmapShader.drawCircleBitmapShader(canvas, bitmap);
+            drawBitmapShader.drawCircleBitmapShader(canvas, bitmap);
 
     }
+
+
 }
