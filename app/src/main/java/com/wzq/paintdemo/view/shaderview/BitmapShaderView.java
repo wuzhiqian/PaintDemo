@@ -37,8 +37,10 @@ public class BitmapShaderView extends View {
         super.onDraw(canvas);
         if(type == 1)
             DrawBitmapShader.drawBitmapShader(canvas, bitmap);
-        else
+        else if(type == 2)
             DrawBitmapShader.drawArcBitmapShader(canvas,bitmap);
+        else
+            DrawBitmapShader.drawCircleBitmapShader(canvas, bitmap);
 
     }
 }
