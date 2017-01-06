@@ -28,7 +28,7 @@ public class DrawBitmapShader {
         shapeDrawable.draw(canvas);
     }
 
-    public static void drawCircleBitmapShader(Canvas canvas, Bitmap bitmap) {
+    public static void drawArcBitmapShader(Canvas canvas, Bitmap bitmap) {
         circleBitmapShader = new BitmapShader(bitmap, Shader.TileMode.MIRROR,Shader.TileMode.REPEAT);
         circleShapeDrawable = new ShapeDrawable(new ArcShape(180, 50));
         circleShapeDrawable.getPaint().setShader(circleBitmapShader);

@@ -46,7 +46,7 @@ public class PaintView extends View {
         DrawBas.drawBas(canvas);
         DrawBitmapShader.drawBitmapShader(canvas, dogBmp);
 
-   //     DrawBitmapShader.drawCircleBitmapShader(canvas, dogBmp);
+   //     DrawBitmapShader.drawArcBitmapShader(canvas, dogBmp);
     }
 
 
